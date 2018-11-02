@@ -1,191 +1,149 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 4
 LIBS:power
 LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
 LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
 LIBS:audio
 LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:dioboard1sym
 LIBS:diobd1-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "DIO Breakout"
+Date "2018-11-02"
+Rev "3"
+Comp "Eastbots"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Wire Wire Line
+	2550 2750 2900 2750
+Wire Wire Line
+	2900 2750 2900 3050
+Wire Wire Line
+	2550 2650 3100 2650
+Wire Wire Line
+	3100 2200 3100 2650
+Wire Wire Line
+	2550 2550 4950 2550
+Wire Wire Line
+	4950 1850 4950 2550
+Wire Wire Line
+	7500 2550 4950 2550
+Connection ~ 4950 2550
 $Comp
-L CONN_01X03_FEMALE J1
-U 1 1 5BD283AF
-P 2450 2650
-F 0 "J1" H 2450 2950 50  0000 C CNN
-F 1 "CONN_01X03_FEMALE" H 2450 2350 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_1x03_Pitch2.54mm" H 2450 2850 50  0001 C CNN
-F 3 "" H 2450 2850 50  0001 C CNN
-	1    2450 2650
-	-1   0    0    1   
+L LED:IRL81A D?
+U 1 1 5BDCCCDE
+P 4950 1650
+F 0 "D?" H 4900 1940 50  0000 C CNN
+F 1 "IRL81A" H 4900 1849 50  0000 C CNN
+F 2 "LED_THT:LED_SideEmitter_Rectangular_W4.5mm_H1.6mm" H 4950 1825 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 4900 1650 50  0001 C CNN
+	1    4950 1650
+	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03_MALE J2
-U 1 1 5BD28790
-P 7800 2650
-F 0 "J2" H 7800 2925 50  0000 C CNN
-F 1 "CONN_01X03_MALE" H 7825 2375 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 7800 2850 50  0001 C CNN
-F 3 "" H 7800 2850 50  0001 C CNN
-	1    7800 2650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2550 2450 3100 2450
-Wire Wire Line
-	2550 2650 7500 2650
-Wire Wire Line
-	2550 2850 2900 2850
-$Comp
-L GND #PWR01
-U 1 1 5BD52860
-P 2900 3150
-F 0 "#PWR01" H 2900 2900 50  0001 C CNN
-F 1 "GND" H 2900 3000 50  0000 C CNN
-F 2 "" H 2900 3150 50  0001 C CNN
-F 3 "" H 2900 3150 50  0001 C CNN
-	1    2900 3150
+L Device:R_US R?
+U 1 1 5BDCD126
+P 4950 1250
+F 0 "R?" H 5018 1296 50  0000 L CNN
+F 1 "R_US" H 5018 1205 50  0000 L CNN
+F 2 "" V 4990 1240 50  0001 C CNN
+F 3 "~" H 4950 1250 50  0001 C CNN
+	1    4950 1250
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
-U 1 1 5BD52878
-P 7250 3100
-F 0 "#PWR02" H 7250 2850 50  0001 C CNN
-F 1 "GND" H 7250 2950 50  0000 C CNN
-F 2 "" H 7250 3100 50  0001 C CNN
-F 3 "" H 7250 3100 50  0001 C CNN
-	1    7250 3100
+L power:+5V #PWR?
+U 1 1 5BDCD7F2
+P 4950 1000
+F 0 "#PWR?" H 4950 850 50  0001 C CNN
+F 1 "+5V" H 4965 1173 50  0000 C CNN
+F 2 "" H 4950 1000 50  0001 C CNN
+F 3 "" H 4950 1000 50  0001 C CNN
+	1    4950 1000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4950 1100 4950 1000
+Wire Wire Line
+	4950 1550 4950 1400
 $Comp
-L +5V #PWR03
-U 1 1 5BD52894
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5BDCDC09
+P 2350 2650
+F 0 "J?" H 2270 2325 50  0000 C CNN
+F 1 "Conn_01x03" H 2270 2416 50  0000 C CNN
+F 2 "" H 2350 2650 50  0001 C CNN
+F 3 "~" H 2350 2650 50  0001 C CNN
+	1    2350 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BDCDF40
 P 3100 2200
-F 0 "#PWR03" H 3100 2050 50  0001 C CNN
-F 1 "+5V" H 3100 2340 50  0000 C CNN
+F 0 "#PWR?" H 3100 2050 50  0001 C CNN
+F 1 "+5V" H 3115 2373 50  0000 C CNN
 F 2 "" H 3100 2200 50  0001 C CNN
 F 3 "" H 3100 2200 50  0001 C CNN
 	1    3100 2200
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR04
-U 1 1 5BD528AC
-P 7100 2250
-F 0 "#PWR04" H 7100 2100 50  0001 C CNN
-F 1 "+5V" H 7100 2390 50  0000 C CNN
-F 2 "" H 7100 2250 50  0001 C CNN
-F 3 "" H 7100 2250 50  0001 C CNN
-	1    7100 2250
+L power:Earth #PWR?
+U 1 1 5BDCE0DF
+P 2900 3050
+F 0 "#PWR?" H 2900 2800 50  0001 C CNN
+F 1 "Earth" H 2900 2900 50  0001 C CNN
+F 2 "" H 2900 3050 50  0001 C CNN
+F 3 "~" H 2900 3050 50  0001 C CNN
+	1    2900 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 2450 3100 2200
+	7500 2750 7150 2750
 Wire Wire Line
-	2900 2850 2900 3150
+	7150 2750 7150 3050
 Wire Wire Line
-	7500 2450 7100 2450
+	7500 2650 6950 2650
 Wire Wire Line
-	7100 2450 7100 2250
-Wire Wire Line
-	7500 2850 7250 2850
-Wire Wire Line
-	7250 2850 7250 3100
+	6950 2200 6950 2650
 $Comp
-L LTL2R3KEK D1
-U 1 1 5BD536AB
-P 4350 2350
-F 0 "D1" H 4200 2450 60  0000 C CNN
-F 1 "LTL2R3KEK" H 4300 2200 60  0000 C CNN
-F 2 "LEDs:LED_D5.0mm" H 4550 2550 60  0001 L CNN
-F 3 "http://optoelectronics.liteon.com/upload/download/DS-20-98-0286/LTL2R3KEK.pdf" H 4550 2650 60  0001 L CNN
-F 4 "160-1682-ND" H 4550 2750 60  0001 L CNN "Digi-Key_PN"
-F 5 "LTL2R3KEK" H 4550 2850 60  0001 L CNN "MPN"
-F 6 "Optoelectronics" H 4550 2950 60  0001 L CNN "Category"
-F 7 "LED Indication - Discrete" H 4550 3050 60  0001 L CNN "Family"
-F 8 "http://optoelectronics.liteon.com/upload/download/DS-20-98-0286/LTL2R3KEK.pdf" H 4550 3150 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/lite-on-inc/LTL2R3KEK/160-1682-ND/573572" H 4550 3250 60  0001 L CNN "DK_Detail_Page"
-F 10 "LED RED CLEAR T-1 3/4 T/H" H 4550 3350 60  0001 L CNN "Description"
-F 11 "Lite-On Inc." H 4550 3450 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4550 3550 60  0001 L CNN "Status"
-	1    4350 2350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4350 2450 4350 2650
-Connection ~ 4350 2650
-$Comp
-L R R1
-U 1 1 5BD5389A
-P 4350 1900
-F 0 "R1" V 4430 1900 50  0000 C CNN
-F 1 "2.2K" V 4350 1900 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 1900 50  0001 C CNN
-F 3 "" H 4350 1900 50  0001 C CNN
-	1    4350 1900
-	1    0    0    -1  
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5BDCE519
+P 7700 2650
+F 0 "J?" H 7620 2325 50  0000 C CNN
+F 1 "Conn_01x03" H 7620 2416 50  0000 C CNN
+F 2 "" H 7700 2650 50  0001 C CNN
+F 3 "~" H 7700 2650 50  0001 C CNN
+	1    7700 2650
+	1    0    0    1   
 $EndComp
 $Comp
-L +5V #PWR05
-U 1 1 5BD53973
-P 4350 1600
-F 0 "#PWR05" H 4350 1450 50  0001 C CNN
-F 1 "+5V" H 4350 1740 50  0000 C CNN
-F 2 "" H 4350 1600 50  0001 C CNN
-F 3 "" H 4350 1600 50  0001 C CNN
-	1    4350 1600
-	1    0    0    -1  
+L power:+5V #PWR?
+U 1 1 5BDCE520
+P 6950 2200
+F 0 "#PWR?" H 6950 2050 50  0001 C CNN
+F 1 "+5V" H 6965 2373 50  0000 C CNN
+F 2 "" H 6950 2200 50  0001 C CNN
+F 3 "" H 6950 2200 50  0001 C CNN
+	1    6950 2200
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	4350 1600 4350 1750
-Wire Wire Line
-	4350 2050 4350 2150
 $Comp
-L R_US1 R?
-U 1 1 5BDBD0EB
-P 4850 1900
-F 0 "R?" V 4930 1900 50  0000 C CNN
-F 1 "R_US1" V 4770 1900 50  0000 C CNN
-F 2 "" H 4850 1900 60  0001 C CNN
-F 3 "" H 4850 1900 60  0001 C CNN
-	1    4850 1900
-	1    0    0    -1  
+L power:Earth #PWR?
+U 1 1 5BDCE526
+P 7150 3050
+F 0 "#PWR?" H 7150 2800 50  0001 C CNN
+F 1 "Earth" H 7150 2900 50  0001 C CNN
+F 2 "" H 7150 3050 50  0001 C CNN
+F 3 "~" H 7150 3050 50  0001 C CNN
+	1    7150 3050
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
