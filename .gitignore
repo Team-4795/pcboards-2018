@@ -1,4 +1,4 @@
 *~
 # kicad backup files
 *.bak
-*.pcb-bak
+*.kicad_pcb-bak
