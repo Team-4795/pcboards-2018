@@ -1,0 +1,25 @@
+
+handcrafted parts list ("bill of materials")
+
+1 input wire assembly with anderson powerpole connector
+1 rectifier diode - 1N4001, 1N4002, 1N4003, 1N4004, 1N4005, etc.
+1 self-resetting PTC fuse, 0.5 to 1.5 amp
+1 electrolytic capacitor, minimum 16 volts, 47uF.  (can be higher voltage or up to 470 uF)
+2 0.1uF ceramic or monolithic capacitor
+1 7805 linear regulator
+1 LED for 5v power indicator; preferrably yellow or orange
+1 resistor for power indicator.   typically 2.2K, less if not bright enough
+
+One for each "DIO" header; quantities for a 4-port board:
+
+4 three-pin 0.1" spaced header; approx. 0.4" tall posts for cable connection,
+  tails long enough to solder
+4 red LED for signal
+4 resistor for red signal LED; typical 2.2K, less if not bright enough
+
+
+
+
+
+
+

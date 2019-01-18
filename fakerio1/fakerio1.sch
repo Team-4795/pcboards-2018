@@ -1,0 +1,663 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "FakeRio Digital Input rev 1"
+Date "2018-12-18"
+Rev "1"
+Comp "Eastbots"
+Comment1 "Initial version by Steve Tell"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US R3
+U 1 1 5C19EEE2
+P 8650 4350
+F 0 "R3" H 8718 4396 50  0000 L CNN
+F 1 "2,2k" H 8718 4305 50  0000 L CNN
+F 2 "" V 8690 4340 50  0001 C CNN
+F 3 "~" H 8650 4350 50  0001 C CNN
+	1    8650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:LD271 D5
+U 1 1 5C19F66E
+P 8650 4750
+F 0 "D5" V 8646 4673 50  0000 R CNN
+F 1 "5mm_red" V 8555 4673 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_IRGrey" H 8650 4925 50  0001 C CNN
+F 3 "http://www.alliedelec.com/m/d/40788c34903a719969df15f1fbea1056.pdf" H 8600 4750 50  0001 C CNN
+	1    8650 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5C19F768
+P 8850 5350
+F 0 "J3" H 8930 5392 50  0000 L CNN
+F 1 "Conn_01x03" H 8930 5301 50  0000 L CNN
+F 2 "" H 8850 5350 50  0001 C CNN
+F 3 "~" H 8850 5350 50  0001 C CNN
+	1    8850 5350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8650 4500 8650 4650
+Wire Wire Line
+	8650 4950 8650 5250
+$Comp
+L power:GNDS #PWR013
+U 1 1 5C19F900
+P 8650 5750
+F 0 "#PWR013" H 8650 5500 50  0001 C CNN
+F 1 "GNDS" H 8655 5577 50  0000 C CNN
+F 2 "" H 8650 5750 50  0001 C CNN
+F 3 "" H 8650 5750 50  0001 C CNN
+	1    8650 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 5C19F947
+P 8650 4100
+F 0 "#PWR012" H 8650 3950 50  0001 C CNN
+F 1 "+5V" H 8665 4273 50  0000 C CNN
+F 2 "" H 8650 4100 50  0001 C CNN
+F 3 "" H 8650 4100 50  0001 C CNN
+	1    8650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 5C19F972
+P 8450 5300
+F 0 "#PWR011" H 8450 5150 50  0001 C CNN
+F 1 "+5V" H 8465 5473 50  0000 C CNN
+F 2 "" H 8450 5300 50  0001 C CNN
+F 3 "" H 8450 5300 50  0001 C CNN
+	1    8450 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 5350 8450 5300
+Wire Wire Line
+	8450 5350 8650 5350
+Wire Wire Line
+	8650 5450 8650 5750
+Wire Wire Line
+	8650 4100 8650 4200
+$Comp
+L Device:R_US R4
+U 1 1 5C19FE19
+P 9700 4350
+F 0 "R4" H 9768 4396 50  0000 L CNN
+F 1 "2,2k" H 9768 4305 50  0000 L CNN
+F 2 "" V 9740 4340 50  0001 C CNN
+F 3 "~" H 9700 4350 50  0001 C CNN
+	1    9700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:LD271 D6
+U 1 1 5C19FE20
+P 9700 4750
+F 0 "D6" V 9696 4673 50  0000 R CNN
+F 1 "5mm_red" V 9605 4673 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_IRGrey" H 9700 4925 50  0001 C CNN
+F 3 "http://www.alliedelec.com/m/d/40788c34903a719969df15f1fbea1056.pdf" H 9650 4750 50  0001 C CNN
+	1    9700 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5C19FE27
+P 9900 5350
+F 0 "J4" H 9980 5392 50  0000 L CNN
+F 1 "Conn_01x03" H 9980 5301 50  0000 L CNN
+F 2 "" H 9900 5350 50  0001 C CNN
+F 3 "~" H 9900 5350 50  0001 C CNN
+	1    9900 5350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9700 4500 9700 4650
+Wire Wire Line
+	9700 4950 9700 5250
+$Comp
+L power:GNDS #PWR016
+U 1 1 5C19FE30
+P 9700 5750
+F 0 "#PWR016" H 9700 5500 50  0001 C CNN
+F 1 "GNDS" H 9705 5577 50  0000 C CNN
+F 2 "" H 9700 5750 50  0001 C CNN
+F 3 "" H 9700 5750 50  0001 C CNN
+	1    9700 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR015
+U 1 1 5C19FE36
+P 9700 4100
+F 0 "#PWR015" H 9700 3950 50  0001 C CNN
+F 1 "+5V" H 9715 4273 50  0000 C CNN
+F 2 "" H 9700 4100 50  0001 C CNN
+F 3 "" H 9700 4100 50  0001 C CNN
+	1    9700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR014
+U 1 1 5C19FE3C
+P 9500 5300
+F 0 "#PWR014" H 9500 5150 50  0001 C CNN
+F 1 "+5V" H 9515 5473 50  0000 C CNN
+F 2 "" H 9500 5300 50  0001 C CNN
+F 3 "" H 9500 5300 50  0001 C CNN
+	1    9500 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5350 9500 5300
+Wire Wire Line
+	9500 5350 9700 5350
+Wire Wire Line
+	9700 5450 9700 5750
+Wire Wire Line
+	9700 4100 9700 4200
+$Comp
+L Device:R_US R1
+U 1 1 5C1A03B0
+P 6450 4350
+F 0 "R1" H 6518 4396 50  0000 L CNN
+F 1 "2,2k" H 6518 4305 50  0000 L CNN
+F 2 "" V 6490 4340 50  0001 C CNN
+F 3 "~" H 6450 4350 50  0001 C CNN
+	1    6450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:LD271 D3
+U 1 1 5C1A03B6
+P 6450 4750
+F 0 "D3" V 6446 4673 50  0000 R CNN
+F 1 "5mm_red" V 6355 4673 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_IRGrey" H 6450 4925 50  0001 C CNN
+F 3 "http://www.alliedelec.com/m/d/40788c34903a719969df15f1fbea1056.pdf" H 6400 4750 50  0001 C CNN
+	1    6450 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5C1A03BC
+P 6650 5350
+F 0 "J1" H 6730 5392 50  0000 L CNN
+F 1 "Conn_01x03" H 6730 5301 50  0000 L CNN
+F 2 "" H 6650 5350 50  0001 C CNN
+F 3 "~" H 6650 5350 50  0001 C CNN
+	1    6650 5350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6450 4500 6450 4650
+Wire Wire Line
+	6450 4950 6450 5250
+$Comp
+L power:GNDS #PWR07
+U 1 1 5C1A03C4
+P 6450 5750
+F 0 "#PWR07" H 6450 5500 50  0001 C CNN
+F 1 "GNDS" H 6455 5577 50  0000 C CNN
+F 2 "" H 6450 5750 50  0001 C CNN
+F 3 "" H 6450 5750 50  0001 C CNN
+	1    6450 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 5C1A03CA
+P 6450 4100
+F 0 "#PWR06" H 6450 3950 50  0001 C CNN
+F 1 "+5V" H 6465 4273 50  0000 C CNN
+F 2 "" H 6450 4100 50  0001 C CNN
+F 3 "" H 6450 4100 50  0001 C CNN
+	1    6450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 5C1A03D0
+P 6250 5300
+F 0 "#PWR05" H 6250 5150 50  0001 C CNN
+F 1 "+5V" H 6265 5473 50  0000 C CNN
+F 2 "" H 6250 5300 50  0001 C CNN
+F 3 "" H 6250 5300 50  0001 C CNN
+	1    6250 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5350 6250 5300
+Wire Wire Line
+	6250 5350 6450 5350
+Wire Wire Line
+	6450 5450 6450 5750
+Wire Wire Line
+	6450 4100 6450 4200
+$Comp
+L Device:R_US R2
+U 1 1 5C1A03DA
+P 7550 4350
+F 0 "R2" H 7618 4396 50  0000 L CNN
+F 1 "2,2k" H 7618 4305 50  0000 L CNN
+F 2 "" V 7590 4340 50  0001 C CNN
+F 3 "~" H 7550 4350 50  0001 C CNN
+	1    7550 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:LD271 D4
+U 1 1 5C1A03E0
+P 7550 4750
+F 0 "D4" V 7546 4673 50  0000 R CNN
+F 1 "5mm_red" V 7455 4673 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_IRGrey" H 7550 4925 50  0001 C CNN
+F 3 "http://www.alliedelec.com/m/d/40788c34903a719969df15f1fbea1056.pdf" H 7500 4750 50  0001 C CNN
+	1    7550 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5C1A03E6
+P 7750 5350
+F 0 "J2" H 7830 5392 50  0000 L CNN
+F 1 "Conn_01x03" H 7830 5301 50  0000 L CNN
+F 2 "" H 7750 5350 50  0001 C CNN
+F 3 "~" H 7750 5350 50  0001 C CNN
+	1    7750 5350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7550 4500 7550 4650
+Wire Wire Line
+	7550 4950 7550 5250
+$Comp
+L power:GNDS #PWR010
+U 1 1 5C1A03EE
+P 7550 5750
+F 0 "#PWR010" H 7550 5500 50  0001 C CNN
+F 1 "GNDS" H 7555 5577 50  0000 C CNN
+F 2 "" H 7550 5750 50  0001 C CNN
+F 3 "" H 7550 5750 50  0001 C CNN
+	1    7550 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 5C1A03F4
+P 7550 4100
+F 0 "#PWR09" H 7550 3950 50  0001 C CNN
+F 1 "+5V" H 7565 4273 50  0000 C CNN
+F 2 "" H 7550 4100 50  0001 C CNN
+F 3 "" H 7550 4100 50  0001 C CNN
+	1    7550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 5C1A03FA
+P 7350 5300
+F 0 "#PWR08" H 7350 5150 50  0001 C CNN
+F 1 "+5V" H 7365 5473 50  0000 C CNN
+F 2 "" H 7350 5300 50  0001 C CNN
+F 3 "" H 7350 5300 50  0001 C CNN
+	1    7350 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 5350 7350 5300
+Wire Wire Line
+	7350 5350 7550 5350
+Wire Wire Line
+	7550 5450 7550 5750
+Wire Wire Line
+	7550 4100 7550 4200
+Text Notes 6350 3800 0    50   ~ 0
+One or more identical channels, each with connector and basic LED circuit
+$Comp
+L Diode:1N4004 D1
+U 1 1 5C1A1B94
+P 2400 2200
+F 0 "D1" H 2400 1984 50  0000 C CNN
+F 1 "1N4004" H 2400 2075 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2400 2025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2400 2200 50  0001 C CNN
+	1    2400 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F1
+U 1 1 5C1A1C96
+P 3000 2200
+F 0 "F1" V 2775 2200 50  0000 C CNN
+F 1 "Polyfuse" V 2866 2200 50  0000 C CNN
+F 2 "" H 3050 2000 50  0001 L CNN
+F 3 "~" H 3000 2200 50  0001 C CNN
+	1    3000 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5C1A1D49
+P 3450 2500
+F 0 "C1" H 3565 2546 50  0000 L CNN
+F 1 "47uF" H 3565 2455 50  0000 L CNN
+F 2 "" H 3450 2500 50  0001 C CNN
+F 3 "~" H 3450 2500 50  0001 C CNN
+	1    3450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5C1A1DD6
+P 3800 2500
+F 0 "C2" H 3915 2546 50  0000 L CNN
+F 1 "0.1" H 3915 2455 50  0000 L CNN
+F 2 "" H 3838 2350 50  0001 C CNN
+F 3 "~" H 3800 2500 50  0001 C CNN
+	1    3800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5C1A1E7C
+P 4750 2550
+F 0 "C3" H 4865 2596 50  0000 L CNN
+F 1 "0.1" H 4865 2505 50  0000 L CNN
+F 2 "" H 4788 2400 50  0001 C CNN
+F 3 "~" H 4750 2550 50  0001 C CNN
+	1    4750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM7805_TO220 U1
+U 1 1 5C1A1FB5
+P 4250 2200
+F 0 "U1" H 4250 2442 50  0000 C CNN
+F 1 "LM7805_TO220" H 4250 2351 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4250 2425 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 4250 2150 50  0001 C CNN
+	1    4250 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2200 2850 2200
+Wire Wire Line
+	3150 2200 3450 2200
+Wire Wire Line
+	3450 2350 3450 2200
+Connection ~ 3450 2200
+Wire Wire Line
+	3450 2200 3800 2200
+Wire Wire Line
+	3800 2350 3800 2200
+Connection ~ 3800 2200
+Wire Wire Line
+	3800 2200 3950 2200
+Wire Wire Line
+	4750 2400 4750 2200
+Connection ~ 4750 2200
+Wire Wire Line
+	4750 2200 5200 2200
+Wire Wire Line
+	4750 2800 4250 2800
+Wire Wire Line
+	3450 2650 3450 2800
+Wire Wire Line
+	3450 2800 1800 2800
+Wire Wire Line
+	3800 2650 3800 2800
+Connection ~ 3800 2800
+Wire Wire Line
+	3800 2800 3450 2800
+Wire Wire Line
+	4250 2500 4250 2800
+Connection ~ 4250 2800
+Wire Wire Line
+	4250 2800 3800 2800
+Wire Wire Line
+	2250 2200 1800 2200
+Wire Wire Line
+	1800 2200 1800 2150
+$Comp
+L power:+5V #PWR04
+U 1 1 5C1A669E
+P 5200 2150
+F 0 "#PWR04" H 5200 2000 50  0001 C CNN
+F 1 "+5V" H 5215 2323 50  0000 C CNN
+F 2 "" H 5200 2150 50  0001 C CNN
+F 3 "" H 5200 2150 50  0001 C CNN
+	1    5200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5C1A6719
+P 1800 2150
+F 0 "TP1" H 1858 2270 50  0000 L CNN
+F 1 "TestPoint" H 1858 2179 50  0000 L CNN
+F 2 "" H 2000 2150 50  0001 C CNN
+F 3 "~" H 2000 2150 50  0001 C CNN
+	1    1800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5C1A6837
+P 1800 2700
+F 0 "TP2" H 1858 2820 50  0000 L CNN
+F 1 "TestPoint" H 1858 2729 50  0000 L CNN
+F 2 "" H 2000 2700 50  0001 C CNN
+F 3 "~" H 2000 2700 50  0001 C CNN
+	1    1800 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 3450 2800
+Wire Wire Line
+	1800 2700 1800 2800
+Wire Wire Line
+	5200 2200 5200 2150
+$Comp
+L Diode:1N4004 D2
+U 1 1 5C1AAC90
+P 3500 4800
+F 0 "D2" H 3500 4584 50  0000 C CNN
+F 1 "1N4004" H 3500 4675 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3500 4625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3500 4800 50  0001 C CNN
+	1    3500 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse F2
+U 1 1 5C1AAC96
+P 3050 4500
+F 0 "F2" V 2825 4500 50  0000 C CNN
+F 1 "Polyfuse" V 2916 4500 50  0000 C CNN
+F 2 "" H 3100 4300 50  0001 L CNN
+F 3 "~" H 3050 4500 50  0001 C CNN
+	1    3050 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 4650 3500 4500
+Wire Wire Line
+	3500 5100 1850 5100
+Wire Wire Line
+	2900 4500 1850 4500
+Wire Wire Line
+	1850 4500 1850 4450
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5C1AACA1
+P 1850 4450
+F 0 "TP3" H 1908 4570 50  0000 L CNN
+F 1 "TestPoint" H 1908 4479 50  0000 L CNN
+F 2 "" H 2050 4450 50  0001 C CNN
+F 3 "~" H 2050 4450 50  0001 C CNN
+	1    1850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5C1AACA7
+P 1850 5000
+F 0 "TP4" H 1908 5120 50  0000 L CNN
+F 1 "TestPoint" H 1908 5029 50  0000 L CNN
+F 2 "" H 2050 5000 50  0001 C CNN
+F 3 "~" H 2050 5000 50  0001 C CNN
+	1    1850 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 5000 1850 5100
+Wire Wire Line
+	3500 4950 3500 5100
+Wire Wire Line
+	3200 4500 3500 4500
+$Comp
+L power:GNDS #PWR03
+U 1 1 5C1B1787
+P 4750 3050
+F 0 "#PWR03" H 4750 2800 50  0001 C CNN
+F 1 "GNDS" H 4755 2877 50  0000 C CNN
+F 2 "" H 4750 3050 50  0001 C CNN
+F 3 "" H 4750 3050 50  0001 C CNN
+	1    4750 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 2800
+Wire Wire Line
+	4750 2800 4750 3050
+Wire Wire Line
+	4750 2700 4750 2800
+$Comp
+L power:GNDS #PWR02
+U 1 1 5C1B4B4D
+P 3750 5200
+F 0 "#PWR02" H 3750 4950 50  0001 C CNN
+F 1 "GNDS" H 3755 5027 50  0000 C CNN
+F 2 "" H 3750 5200 50  0001 C CNN
+F 3 "" H 3750 5200 50  0001 C CNN
+	1    3750 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5C1B4BA0
+P 3750 4400
+F 0 "#PWR01" H 3750 4250 50  0001 C CNN
+F 1 "+5V" H 3765 4573 50  0000 C CNN
+F 2 "" H 3750 4400 50  0001 C CNN
+F 3 "" H 3750 4400 50  0001 C CNN
+	1    3750 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4500 3750 4500
+Wire Wire Line
+	3750 4500 3750 4400
+Connection ~ 3500 4500
+Wire Wire Line
+	3750 5200 3750 5100
+Wire Wire Line
+	3750 5100 3500 5100
+Connection ~ 3500 5100
+Text Notes 1400 4450 0    50   ~ 0
++5v input
+Text Notes 1450 1950 0    50   ~ 0
++12v Input\n
+Wire Wire Line
+	4550 2200 4750 2200
+Wire Notes Line
+	850  750  850  5650
+Wire Notes Line
+	850  5650 5550 5650
+Wire Notes Line
+	5550 5650 5550 750 
+Wire Notes Line
+	5550 750  850  750 
+Wire Notes Line
+	850  3700 5550 3700
+Text Notes 950  1000 0    50   ~ 0
+Power Input.  Chose either 12v input and regulator\nor 5v input and protection\n
+Text Notes 1500 4100 0    50   ~ 0
+5v input with overcurrent protection and reverse polarity protection\n
+Text Notes 2100 1800 0    50   ~ 0
+12v input with overcurrent protection, reverse polarity protection,\nand linear regulator to produce +5v
+$Comp
+L Device:R_US R?
+U 1 1 5C1C57D3
+P 6450 1550
+F 0 "R?" H 6518 1596 50  0000 L CNN
+F 1 "2,2k" H 6518 1505 50  0000 L CNN
+F 2 "" V 6490 1540 50  0001 C CNN
+F 3 "~" H 6450 1550 50  0001 C CNN
+	1    6450 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:LD271 D?
+U 1 1 5C1C57D9
+P 6450 1950
+F 0 "D?" V 6446 1873 50  0000 R CNN
+F 1 "5mm_yellow" V 6355 1873 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_IRGrey" H 6450 2125 50  0001 C CNN
+F 3 "http://www.alliedelec.com/m/d/40788c34903a719969df15f1fbea1056.pdf" H 6400 1950 50  0001 C CNN
+	1    6450 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 1700 6450 1850
+$Comp
+L power:GNDS #PWR?
+U 1 1 5C1C57E7
+P 6450 2400
+F 0 "#PWR?" H 6450 2150 50  0001 C CNN
+F 1 "GNDS" H 6455 2227 50  0000 C CNN
+F 2 "" H 6450 2400 50  0001 C CNN
+F 3 "" H 6450 2400 50  0001 C CNN
+	1    6450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C1C57ED
+P 6450 1300
+F 0 "#PWR?" H 6450 1150 50  0001 C CNN
+F 1 "+5V" H 6465 1473 50  0000 C CNN
+F 2 "" H 6450 1300 50  0001 C CNN
+F 3 "" H 6450 1300 50  0001 C CNN
+	1    6450 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1300 6450 1400
+Wire Wire Line
+	6450 2150 6450 2400
+Text Notes 6500 2200 0    50   ~ 0
+Power\n
+Text Notes 6200 1050 0    50   ~ 0
+Power ON indicator\n
+Wire Notes Line
+	6000 850  6000 2750
+Wire Notes Line
+	6000 2750 7100 2750
+Wire Notes Line
+	7100 2750 7100 850 
+Wire Notes Line
+	7100 850  6000 850 
+$EndSCHEMATC
