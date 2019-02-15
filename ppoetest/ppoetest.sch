@@ -1,0 +1,103 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:8P8C J1
+U 1 1 5C6644CC
+P 2700 3100
+F 0 "J1" H 2755 3767 50  0000 C CNN
+F 1 "8P8C" H 2755 3676 50  0000 C CNN
+F 2 "" V 2700 3125 50  0001 C CNN
+F 3 "~" V 2700 3125 50  0001 C CNN
+	1    2700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:LD271 D1
+U 1 1 5C66457B
+P 3900 3400
+F 0 "D1" H 3900 3200 50  0000 C CNN
+F 1 "yellow_5mm" H 3900 3300 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 3900 3575 50  0001 C CNN
+F 3 "http://www.alliedelec.com/m/d/40788c34903a719969df15f1fbea1056.pdf" H 3850 3400 50  0001 C CNN
+	1    3900 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5C664642
+P 4900 3000
+F 0 "R2" H 4968 3046 50  0000 L CNN
+F 1 "3.3K" H 4968 2955 50  0000 L CNN
+F 2 "" V 4940 2990 50  0001 C CNN
+F 3 "~" H 4900 3000 50  0001 C CNN
+	1    4900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:LD271 D2
+U 1 1 5C66491C
+P 4400 2800
+F 0 "D2" H 4350 3090 50  0000 C CNN
+F 1 "yellow_5mm" H 4350 2999 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4400 2975 50  0001 C CNN
+F 3 "http://www.alliedelec.com/m/d/40788c34903a719969df15f1fbea1056.pdf" H 4350 2800 50  0001 C CNN
+	1    4400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5C664922
+P 5400 3000
+F 0 "R1" H 5468 3046 50  0000 L CNN
+F 1 "3.3K" H 5468 2955 50  0000 L CNN
+F 2 "" V 5440 2990 50  0001 C CNN
+F 3 "~" H 5400 3000 50  0001 C CNN
+	1    5400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2800 4200 2800
+Wire Wire Line
+	3100 2700 3750 2700
+Wire Wire Line
+	3750 2700 3750 2400
+Wire Wire Line
+	3750 2400 5400 2400
+Wire Wire Line
+	5400 2400 5400 2850
+Wire Wire Line
+	5400 3150 5400 3400
+Wire Wire Line
+	3100 3000 4650 3000
+Wire Wire Line
+	4650 3000 4650 3200
+Wire Wire Line
+	4650 3200 4900 3200
+Wire Wire Line
+	4900 3200 4900 3150
+Wire Wire Line
+	4900 2850 4900 2800
+Wire Wire Line
+	4900 2800 4500 2800
+Wire Wire Line
+	3100 3100 3650 3100
+Wire Wire Line
+	4100 3400 5400 3400
+Wire Wire Line
+	3650 3100 3650 3400
+Wire Wire Line
+	3650 3400 3800 3400
+$EndSCHEMATC
