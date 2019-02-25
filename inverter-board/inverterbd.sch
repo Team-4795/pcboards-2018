@@ -1,0 +1,411 @@
+EESchema Schematic File Version 4
+LIBS:power
+LIBS:device
+LIBS:74xx
+LIBS:audio
+LIBS:interface
+LIBS:inverterbd-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Signal Inverter Board"
+Date "2019-2-24"
+Rev "1"
+Comp "Eastbots"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2550 2750 2900 2750
+Wire Wire Line
+	2900 2750 2900 3050
+Wire Wire Line
+	2550 2650 3100 2650
+Wire Wire Line
+	3100 2200 3100 2650
+$Comp
+L LED:IRL81A D2
+U 1 1 5BDCCCDE
+P 4950 1650
+F 0 "D2" H 4900 1940 50  0000 C CNN
+F 1 "RED_5mm" H 4900 1849 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4950 1825 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 4900 1650 50  0001 C CNN
+	1    4950 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5BDCD126
+P 4950 1250
+F 0 "R2" H 5018 1296 50  0000 L CNN
+F 1 "2.2K" H 5018 1205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4990 1240 50  0001 C CNN
+F 3 "~" H 4950 1250 50  0001 C CNN
+	1    4950 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5BDCD7F2
+P 4950 1000
+F 0 "#PWR0101" H 4950 850 50  0001 C CNN
+F 1 "+5V" H 4965 1173 50  0000 C CNN
+F 2 "" H 4950 1000 50  0001 C CNN
+F 3 "" H 4950 1000 50  0001 C CNN
+	1    4950 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1100 4950 1000
+Wire Wire Line
+	4950 1550 4950 1400
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5BDCDC09
+P 2350 2650
+F 0 "J1" H 2270 2325 50  0000 C CNN
+F 1 "Conn_01x03" H 2270 2416 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Horizontal" H 2350 2650 50  0001 C CNN
+F 3 "~" H 2350 2650 50  0001 C CNN
+	1    2350 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5BDCDF40
+P 3100 2200
+F 0 "#PWR0102" H 3100 2050 50  0001 C CNN
+F 1 "+5V" H 3115 2373 50  0000 C CNN
+F 2 "" H 3100 2200 50  0001 C CNN
+F 3 "" H 3100 2200 50  0001 C CNN
+	1    3100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0103
+U 1 1 5BDCE0DF
+P 4200 4600
+F 0 "#PWR0103" H 4200 4350 50  0001 C CNN
+F 1 "Earth" H 4200 4450 50  0001 C CNN
+F 2 "" H 4200 4600 50  0001 C CNN
+F 3 "~" H 4200 4600 50  0001 C CNN
+	1    4200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5BDCE519
+P 7950 2850
+F 0 "J2" H 7870 2525 50  0000 C CNN
+F 1 "Conn_01x03" H 7870 2616 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 7950 2850 50  0001 C CNN
+F 3 "~" H 7950 2850 50  0001 C CNN
+	1    7950 2850
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5BDCE520
+P 7550 2250
+F 0 "#PWR0104" H 7550 2100 50  0001 C CNN
+F 1 "+5V" H 7565 2423 50  0000 C CNN
+F 2 "" H 7550 2250 50  0001 C CNN
+F 3 "" H 7550 2250 50  0001 C CNN
+	1    7550 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0105
+U 1 1 5BDCE526
+P 7700 2950
+F 0 "#PWR0105" H 7700 2700 50  0001 C CNN
+F 1 "Earth" H 7700 2800 50  0001 C CNN
+F 2 "" H 7700 2950 50  0001 C CNN
+F 3 "~" H 7700 2950 50  0001 C CNN
+	1    7700 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2550 4950 2550
+Wire Wire Line
+	4950 1850 4950 2000
+Wire Wire Line
+	4950 2300 4950 2550
+Connection ~ 4950 2550
+$Comp
+L Diode:1N4148 D3
+U 1 1 5BE3A273
+P 4950 2150
+F 0 "D3" H 4950 2366 50  0000 C CNN
+F 1 "1N4148" H 4950 2275 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4950 1975 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4950 2150 50  0001 C CNN
+	1    4950 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED:IRL81A D1
+U 1 1 5BE3B324
+P 4200 4250
+F 0 "D1" H 4150 4540 50  0000 C CNN
+F 1 "YELLOW_5mm" H 4150 4449 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4200 4425 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 4150 4250 50  0001 C CNN
+	1    4200 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5BE3B32A
+P 4200 3850
+F 0 "R1" H 4268 3896 50  0000 L CNN
+F 1 "2.2K" H 4268 3805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4240 3840 50  0001 C CNN
+F 3 "~" H 4200 3850 50  0001 C CNN
+	1    4200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5BE3B330
+P 4200 3600
+F 0 "#PWR0106" H 4200 3450 50  0001 C CNN
+F 1 "+5V" H 4215 3773 50  0000 C CNN
+F 2 "" H 4200 3600 50  0001 C CNN
+F 3 "" H 4200 3600 50  0001 C CNN
+	1    4200 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3700 4200 3600
+Wire Wire Line
+	4200 4150 4200 4000
+Wire Wire Line
+	4200 4450 4200 4600
+$Comp
+L power:Earth #PWR0107
+U 1 1 5BE3B812
+P 2900 3050
+F 0 "#PWR0107" H 2900 2800 50  0001 C CNN
+F 1 "Earth" H 2900 2900 50  0001 C CNN
+F 2 "" H 2900 3050 50  0001 C CNN
+F 3 "~" H 2900 3050 50  0001 C CNN
+	1    2900 3050
+	1    0    0    -1  
+$EndComp
+Text Label 5700 2550 0    50   ~ 0
+signal
+$Comp
+L Transistor_FET:2N7000 Q1
+U 1 1 5C730356
+P 7250 2750
+F 0 "Q1" H 7456 2704 50  0000 L CNN
+F 1 "2N7000" H 7456 2795 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7450 2675 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7250 2750 50  0001 L CNN
+	1    7250 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7750 2750 7450 2750
+Wire Wire Line
+	7550 2850 7750 2850
+Wire Wire Line
+	7550 2250 7550 2850
+Wire Wire Line
+	4950 2550 6650 2550
+$Comp
+L power:Earth #PWR0108
+U 1 1 5C735E8D
+P 7150 2950
+F 0 "#PWR0108" H 7150 2700 50  0001 C CNN
+F 1 "Earth" H 7150 2800 50  0001 C CNN
+F 2 "" H 7150 2950 50  0001 C CNN
+F 3 "~" H 7150 2950 50  0001 C CNN
+	1    7150 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2950 7750 2950
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5C737446
+P 7950 3450
+F 0 "J3" H 7870 3125 50  0000 C CNN
+F 1 "Conn_01x03" H 7870 3216 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 7950 3450 50  0001 C CNN
+F 3 "~" H 7950 3450 50  0001 C CNN
+	1    7950 3450
+	1    0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0109
+U 1 1 5C73744C
+P 7700 3550
+F 0 "#PWR0109" H 7700 3300 50  0001 C CNN
+F 1 "Earth" H 7700 3400 50  0001 C CNN
+F 2 "" H 7700 3550 50  0001 C CNN
+F 3 "~" H 7700 3550 50  0001 C CNN
+	1    7700 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q2
+U 1 1 5C737452
+P 7250 3350
+F 0 "Q2" H 7456 3304 50  0000 L CNN
+F 1 "2N7000" H 7456 3395 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7450 3275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7250 3350 50  0001 L CNN
+	1    7250 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7750 3350 7450 3350
+Wire Wire Line
+	7550 3450 7750 3450
+Wire Wire Line
+	7550 2850 7550 3450
+$Comp
+L power:Earth #PWR0110
+U 1 1 5C73745B
+P 7150 3550
+F 0 "#PWR0110" H 7150 3300 50  0001 C CNN
+F 1 "Earth" H 7150 3400 50  0001 C CNN
+F 2 "" H 7150 3550 50  0001 C CNN
+F 3 "~" H 7150 3550 50  0001 C CNN
+	1    7150 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3550 7750 3550
+Connection ~ 7550 2850
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5C737762
+P 7950 4050
+F 0 "J4" H 7870 3725 50  0000 C CNN
+F 1 "Conn_01x03" H 7870 3816 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 7950 4050 50  0001 C CNN
+F 3 "~" H 7950 4050 50  0001 C CNN
+	1    7950 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0111
+U 1 1 5C737768
+P 7700 4150
+F 0 "#PWR0111" H 7700 3900 50  0001 C CNN
+F 1 "Earth" H 7700 4000 50  0001 C CNN
+F 2 "" H 7700 4150 50  0001 C CNN
+F 3 "~" H 7700 4150 50  0001 C CNN
+	1    7700 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q3
+U 1 1 5C73776E
+P 7250 3950
+F 0 "Q3" H 7456 3904 50  0000 L CNN
+F 1 "2N7000" H 7456 3995 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7450 3875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7250 3950 50  0001 L CNN
+	1    7250 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7750 3950 7450 3950
+Wire Wire Line
+	7550 4050 7750 4050
+Wire Wire Line
+	7550 3450 7550 4050
+$Comp
+L power:Earth #PWR0112
+U 1 1 5C737777
+P 7150 4150
+F 0 "#PWR0112" H 7150 3900 50  0001 C CNN
+F 1 "Earth" H 7150 4000 50  0001 C CNN
+F 2 "" H 7150 4150 50  0001 C CNN
+F 3 "~" H 7150 4150 50  0001 C CNN
+	1    7150 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4150 7750 4150
+Connection ~ 7550 3450
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5C737D21
+P 7950 4650
+F 0 "J5" H 7870 4325 50  0000 C CNN
+F 1 "Conn_01x03" H 7870 4416 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 7950 4650 50  0001 C CNN
+F 3 "~" H 7950 4650 50  0001 C CNN
+	1    7950 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0113
+U 1 1 5C737D27
+P 7700 4750
+F 0 "#PWR0113" H 7700 4500 50  0001 C CNN
+F 1 "Earth" H 7700 4600 50  0001 C CNN
+F 2 "" H 7700 4750 50  0001 C CNN
+F 3 "~" H 7700 4750 50  0001 C CNN
+	1    7700 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q4
+U 1 1 5C737D2D
+P 7250 4550
+F 0 "Q4" H 7456 4504 50  0000 L CNN
+F 1 "2N7000" H 7456 4595 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7450 4475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7250 4550 50  0001 L CNN
+	1    7250 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7750 4550 7450 4550
+Wire Wire Line
+	7550 4650 7750 4650
+Wire Wire Line
+	7550 4050 7550 4650
+$Comp
+L power:Earth #PWR0114
+U 1 1 5C737D36
+P 7150 4750
+F 0 "#PWR0114" H 7150 4500 50  0001 C CNN
+F 1 "Earth" H 7150 4600 50  0001 C CNN
+F 2 "" H 7150 4750 50  0001 C CNN
+F 3 "~" H 7150 4750 50  0001 C CNN
+	1    7150 4750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4750 7750 4750
+Connection ~ 7550 4050
+Wire Wire Line
+	7150 3150 6650 3150
+Wire Wire Line
+	6650 3150 6650 2550
+Connection ~ 6650 2550
+Wire Wire Line
+	6650 2550 7150 2550
+Wire Wire Line
+	7150 3750 6650 3750
+Wire Wire Line
+	6650 3750 6650 3150
+Connection ~ 6650 3150
+Wire Wire Line
+	7150 4350 6650 4350
+Wire Wire Line
+	6650 4350 6650 3750
+Connection ~ 6650 3750
+$EndSCHEMATC
