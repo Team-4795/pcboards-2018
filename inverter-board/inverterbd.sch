@@ -209,7 +209,7 @@ F 1 "2N7000" H 7456 2795 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7450 2675 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7250 2750 50  0001 L CNN
 	1    7250 2750
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	7750 2750 7450 2750
@@ -263,7 +263,7 @@ F 1 "2N7000" H 7456 3395 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7450 3275 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7250 3350 50  0001 L CNN
 	1    7250 3350
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	7750 3350 7450 3350
@@ -316,7 +316,7 @@ F 1 "2N7000" H 7456 3995 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7450 3875 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7250 3950 50  0001 L CNN
 	1    7250 3950
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	7750 3950 7450 3950
@@ -369,7 +369,7 @@ F 1 "2N7000" H 7456 4595 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7450 4475 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7250 4550 50  0001 L CNN
 	1    7250 4550
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	7750 4550 7450 4550
