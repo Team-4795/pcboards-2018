@@ -1,0 +1,294 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Banner Enginneering Sensor Breakout"
+Date "2022-03-23"
+Rev "3"
+Comp "Eastbots"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3875 2750 4250 2750
+Wire Wire Line
+	4250 2750 4250 3050
+Wire Wire Line
+	3875 2650 4450 2650
+Wire Wire Line
+	4450 2200 4450 2650
+$Comp
+L LED:IRL81A D2
+U 1 1 5BDCCCDE
+P 4925 1650
+F 0 "D2" H 4875 1940 50  0000 C CNN
+F 1 "RED_5mm" H 4875 1849 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4925 1825 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 4875 1650 50  0001 C CNN
+	1    4925 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5BDCD7F2
+P 4925 1075
+F 0 "#PWR0101" H 4925 925 50  0001 C CNN
+F 1 "+5V" H 4940 1248 50  0000 C CNN
+F 2 "" H 4925 1075 50  0001 C CNN
+F 3 "" H 4925 1075 50  0001 C CNN
+	1    4925 1075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 1175 4925 1075
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5BDCDC09
+P 3675 2650
+F 0 "J1" H 3595 2325 50  0000 C CNN
+F 1 "Conn_01x03" H 3595 2416 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Horizontal" H 3675 2650 50  0001 C CNN
+F 3 "~" H 3675 2650 50  0001 C CNN
+	1    3675 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5BDCDF40
+P 4450 2200
+F 0 "#PWR0102" H 4450 2050 50  0001 C CNN
+F 1 "+5V" H 4465 2373 50  0000 C CNN
+F 2 "" H 4450 2200 50  0001 C CNN
+F 3 "" H 4450 2200 50  0001 C CNN
+	1    4450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0103
+U 1 1 5BDCE0DF
+P 4450 4025
+F 0 "#PWR0103" H 4450 3775 50  0001 C CNN
+F 1 "Earth" H 4450 3875 50  0001 C CNN
+F 2 "" H 4450 4025 50  0001 C CNN
+F 3 "~" H 4450 4025 50  0001 C CNN
+	1    4450 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0105
+U 1 1 5BDCE526
+P 6475 4050
+F 0 "#PWR0105" H 6475 3800 50  0001 C CNN
+F 1 "Earth" H 6475 3900 50  0001 C CNN
+F 2 "" H 6475 4050 50  0001 C CNN
+F 3 "~" H 6475 4050 50  0001 C CNN
+	1    6475 4050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 1850 4925 2000
+$Comp
+L Diode:1N4148 D3
+U 1 1 5BE3A273
+P 4925 2150
+F 0 "D3" H 4925 2366 50  0000 C CNN
+F 1 "1N4148" H 4925 2275 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4925 1975 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4925 2150 50  0001 C CNN
+	1    4925 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED:IRL81A D1
+U 1 1 5BE3B324
+P 4450 3675
+F 0 "D1" H 4400 3965 50  0000 C CNN
+F 1 "YELLOW_5mm" H 4400 3874 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4450 3850 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 4400 3675 50  0001 C CNN
+	1    4450 3675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5BE3B32A
+P 4450 3275
+F 0 "R1" H 4518 3321 50  0000 L CNN
+F 1 "2.2K" H 4518 3230 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4490 3265 50  0001 C CNN
+F 3 "~" H 4450 3275 50  0001 C CNN
+	1    4450 3275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3575 4450 3425
+Wire Wire Line
+	4450 3875 4450 4025
+$Comp
+L power:Earth #PWR0107
+U 1 1 5BE3B812
+P 4250 3050
+F 0 "#PWR0107" H 4250 2800 50  0001 C CNN
+F 1 "Earth" H 4250 2900 50  0001 C CNN
+F 2 "" H 4250 3050 50  0001 C CNN
+F 3 "~" H 4250 3050 50  0001 C CNN
+	1    4250 3050
+	1    0    0    -1  
+$EndComp
+Text Label 4650 2525 0    50   ~ 0
+signal
+$Comp
+L Connector_Generic:Conn_01x05 J3
+U 1 1 623D222F
+P 6975 3400
+F 0 "J3" H 7055 3442 50  0000 L CNN
+F 1 "Conn_01x05" H 7055 3351 50  0000 L CNN
+F 2 "" H 6975 3400 50  0001 C CNN
+F 3 "~" H 6975 3400 50  0001 C CNN
+	1    6975 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 623D32E1
+P 6925 2550
+F 0 "J2" H 7005 2542 50  0000 L CNN
+F 1 "Conn_01x02" H 7005 2451 50  0000 L CNN
+F 2 "" H 6925 2550 50  0001 C CNN
+F 3 "~" H 6925 2550 50  0001 C CNN
+	1    6925 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 623D768B
+P 5325 3500
+F 0 "Q1" H 5516 3546 50  0000 L CNN
+F 1 "2N3904" H 5516 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5525 3425 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 5325 3500 50  0001 L CNN
+	1    5325 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5225 3300 5225 2550
+$Comp
+L Device:R_US R4
+U 1 1 623DD375
+P 6075 3825
+F 0 "R4" H 6143 3871 50  0000 L CNN
+F 1 "10K" H 6143 3780 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6115 3815 50  0001 C CNN
+F 3 "~" H 6075 3825 50  0001 C CNN
+	1    6075 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 623DDE8E
+P 5750 3500
+F 0 "R3" V 5675 3475 50  0000 L CNN
+F 1 "10K" V 5600 3425 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5790 3490 50  0001 C CNN
+F 3 "~" H 5750 3500 50  0001 C CNN
+	1    5750 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR01
+U 1 1 623DE6AC
+P 5225 4050
+F 0 "#PWR01" H 5225 3800 50  0001 C CNN
+F 1 "Earth" H 5225 3900 50  0001 C CNN
+F 2 "" H 5225 4050 50  0001 C CNN
+F 3 "~" H 5225 4050 50  0001 C CNN
+	1    5225 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6075 3675 6075 3500
+$Comp
+L power:Earth #PWR02
+U 1 1 623F436A
+P 6075 4050
+F 0 "#PWR02" H 6075 3800 50  0001 C CNN
+F 1 "Earth" H 6075 3900 50  0001 C CNN
+F 2 "" H 6075 4050 50  0001 C CNN
+F 3 "~" H 6075 4050 50  0001 C CNN
+	1    6075 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6075 3975 6075 4050
+Wire Wire Line
+	5225 3700 5225 4050
+Wire Wire Line
+	5525 3500 5600 3500
+Wire Wire Line
+	6475 4050 6475 3600
+Wire Wire Line
+	6475 2550 6725 2550
+Wire Wire Line
+	6775 3200 6475 3200
+Connection ~ 6475 3200
+Wire Wire Line
+	6775 3600 6475 3600
+Connection ~ 6475 3600
+Wire Wire Line
+	6475 3600 6475 3200
+Connection ~ 6075 3500
+Wire Wire Line
+	6775 3400 6600 3400
+Wire Wire Line
+	6600 2650 6725 2650
+Wire Wire Line
+	6075 3500 6775 3500
+Wire Wire Line
+	6600 2650 6600 3400
+Wire Wire Line
+	6475 2550 6475 3200
+Text Label 6600 2925 0    50   ~ 0
++12v
+Text Label 6150 3500 0    50   ~ 0
+sigin
+Wire Wire Line
+	5900 3500 6075 3500
+Text Notes 5000 1725 0    50   ~ 0
+SIGNAL_LOW
+Text Notes 4550 3750 0    50   ~ 0
+POWER
+Text Notes 6350 2450 0    50   ~ 0
++12v sensor power input
+Text Notes 6650 4075 0    50   ~ 0
+Banner QS16VP6 sensor\n1 or 5  Blue, power- return\n3 Brown, power+\n4 Black, proximity-detect NO output\n2 White, marginal-status or NC output
+Wire Wire Line
+	4450 2650 4450 3125
+Connection ~ 4450 2650
+Connection ~ 5600 3500
+Wire Wire Line
+	5600 3500 5775 3500
+Wire Wire Line
+	3875 2550 4925 2550
+Wire Wire Line
+	4925 2300 4925 2550
+Connection ~ 4925 2550
+Wire Wire Line
+	4925 2550 5225 2550
+$Comp
+L Device:R_US R2
+U 1 1 5BDCD126
+P 4925 1325
+F 0 "R2" H 4993 1371 50  0000 L CNN
+F 1 "2.2K" H 4993 1280 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4965 1315 50  0001 C CNN
+F 3 "~" H 4925 1325 50  0001 C CNN
+	1    4925 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 1550 4925 1475
+$EndSCHEMATC
